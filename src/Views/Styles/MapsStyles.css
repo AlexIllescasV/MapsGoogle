@@ -1,0 +1,57 @@
+.map-container{
+    width: 100%;
+    height: 90vh;
+}
+#container_maps_wrapper{
+    width: 100%;
+    height: 90vh;
+}
+.marker{
+    padding: 0.5rem;
+    background: black;
+    transition: all 0.3s ease-out;
+    position: relative;
+    width: 100px;
+    border-radius: 5px;
+}
+.marker:after{
+    position: absolute;
+    top:0.75rem;
+    right: 0.75rem;
+    font-size: 0.75rem;
+    opacity: 1;
+}
+.marker.highlight:after{
+    opacity: 0;
+    animation: fadeOut 0.5s;
+}
+
+.marker.search:after{
+    content: "B";
+    color:white;
+}
+.marker.paid:after{
+    content: "P";
+    color:white;
+}
+
+.marker h2{
+    margin:0;
+    color:white;
+}
+
+.marker p{
+    margin:0;
+    color:white;
+}
+
+.highlight{
+    width: 200px;
+    color:white;
+}
+.highlight.search{
+    background: rgb(223, 214, 112);
+}
+.highlight.paid{
+    background: rgb(13, 113, 53);
+}
